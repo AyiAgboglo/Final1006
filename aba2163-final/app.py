@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
-
-@author: etill
-"""
+##################
+# Name: Ayi Agboglo
+# uni: aba2163
+#
+# File contains Flask app for personal website (1006 Final)
+##################
 
 #import statements
 from flask import Flask, render_template
@@ -11,15 +11,17 @@ from flask import Flask, render_template
 #Flask app variable
 app = Flask(__name__)
 
-#static route
+#static route to main page
 @app.route("/")
 def main_page():
     return render_template("index.html")
 
+#static route to hyperlink about future plans
 @app.route("/futureplans")
 def hyplink():
     return render_template("future.html")
 
+#static route to hyperlink about fun facts
 @app.route("/funfacts")
 def hyplink1():
     return render_template("funfacts.html")
