@@ -16,9 +16,9 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-@app.route("/1006")
+@app.route("/futureplans")
 def test():
-    return render_template("1006.html")
+    return render_template("future.html")
 
 
 #start the server
